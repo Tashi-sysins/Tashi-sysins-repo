@@ -3,8 +3,8 @@
     "Author": "ヌル",
     "Name": "AutoTreasure",
     "InternalName": "AutoTreasure",
-    "AssemblyVersion": "0.1.0.0",
-    "TestingAssemblyVersion": "0.1.0.0",
+    "AssemblyVersion": "0.1.0.1",
+    "TestingAssemblyVersion": "0.1.0.1",
     "Description": "古ぼけた地図の宝探しを自動化する。\n宝の座標を割り出して移動し、ディグ・宝箱・討伐・ロット・魔紋の周回までを通しで行う。\n複数クライアントの足並みも揃える。\n\n必須プラグイン: BossMod Reborn / Rotation Solver Reborn\n（移動は取り込み済みの vnavmesh を使うため、別途導入は不要）",
     "Punchline": "魔紋自動周回",
     "ApplicableVersion": "any",
@@ -22,11 +22,11 @@
     "IsHide": false,
     "IsTestingExclusive": false,
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.0/AutoTreasure.zip",
-    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.0/AutoTreasure.zip",
-    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.0/AutoTreasure.zip",
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.1/AutoTreasure.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.1/AutoTreasure.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.1/AutoTreasure.zip",
     "DownloadCount": 0,
-    "Changelog": "0.1.0.0\n初回公開。"
+    "Changelog": "0.1.0.1\nアイコンを変更。\n\n0.1.0.0\n初回公開。"
   }
 ]
 
