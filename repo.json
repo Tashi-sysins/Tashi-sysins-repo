@@ -27,5 +27,35 @@
     "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.2.0.0/AutoTreasure.zip",
     "DownloadCount": 0,
     "Changelog": "0.2.0.0\nインターネット越しの連携に対応。別々のPC・別々の回線でも足並みを揃えられる。\n同じパーティーなら招待のやり取りは不要（設定の「繋ぎ方」で選ぶ）。\n\n不具合の修正:\n・地図役がパーティリーダー以外だと、宝の座標が仲間に届かなかった\n・地図役が地形の外に立って掘ると、宝箱へ移動できずに止まっていた\n・魔紋の中で、敵が出ているのに宝箱へ触り続けていた\n・LazyLoot が押さないとき、ロットが終わらないまま止まっていた\n・革袋を拾わずに次の区画へ進んでいた\n・フェアリー等のペットを敵と誤って狙い、追いかけてしまうことがあった\n・CBT(Automaton)の即脱出で、宝箱を取る前に脱出することがあった\n  （周回中だけ止め、終わったら元に戻す）\n\nそのほか:\n・止まったときに何が起きているかを記録に残すようにした\n・中央以外の宝箱は待たずに開けるようにした\n\n0.1.0.2\n説明文を修正。\n\n0.1.0.1\nアイコンを変更。\n\n0.1.0.0\n初回公開。"
+  },
+  {
+    "Author": "ヌル",
+    "Name": "Bard Performance Recorder",
+    "InternalName": "BardPerformanceRecorder",
+    "AssemblyVersion": "0.1.0.0",
+    "TestingAssemblyVersion": "0.1.0.0",
+    "Description": "近くのプレイヤーが実際に演奏した音符を観測して、標準MIDIファイルに書き出します。\n\n- ソロ・合奏（最大8人）の両方に対応\n- 「ずっと記録する」で、曲ごとに自動で区切って保存（演奏会向け）\n- 楽器28種すべてを判別し、トラック名に楽器名を入れて出力\n- MidiBard2 用の設定ファイル(.json)も同時に出力するので、読み込むだけで同じ編成で弾き直せます\n- 記録後に演奏者を選び直して書き出せます（無関係な演奏の除去・録り直し不要）\n\n他のプラグインは必要ありません。\n\n【制限】\n- テンポ・強弱はパケットに含まれないため復元できません\n- 音の長さは推定値です（単音はほぼ正確／和音では長めに出ます）\n- 自分自身の演奏は記録できません（自分には送り返されないため）\n\nゲームへの送信・演奏操作は一切行いません（受信の観測のみ）。\n元MIDIファイルの復元を目的とするものではありません。",
+    "Punchline": "近くの演奏を観測して MIDI に記録",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "RepoUrl": "https://github.com/Tashi-sysins/Tashi-sysins-repo",
+    "Tags": [
+      "music",
+      "midi",
+      "bard",
+      "recorder",
+      "performance"
+    ],
+    "CategoryTags": [
+      "other"
+    ],
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/BardPerformanceRecorder-0.1.0.0/BardPerformanceRecorder.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/BardPerformanceRecorder-0.1.0.0/BardPerformanceRecorder.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/BardPerformanceRecorder-0.1.0.0/BardPerformanceRecorder.zip",
+    "DownloadCount": 0,
+    "Changelog": "0.1.0.0\n初回公開。\n\n近くのプレイヤーの演奏を観測してMIDIに記録します。\n・ソロと合奏（最大8人）に対応\n・「ずっと記録する」で曲ごとに自動保存\n・楽器28種を判別し、MidiBard2用の設定(.json)も同時出力\n・記録後に演奏者を選び直して書き出せます"
   }
 ]

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <!-- 本番と同じ記録処理を、ゲーム無しで動かすために
+             ゲーム非依存の層だけを取り込む。 -->
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>disable</Nullable>
+        <AssemblyName>BprecReplay</AssemblyName>
+        <RootNamespace>BardPerformanceRecorder.Replay</RootNamespace>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Melanchall.DryWetMidi" Version="7.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.cs" />
+        <Compile Include="..\BardPerformanceRecorder\Midi\MidiExporter.cs" Link="MidiExporter.cs" />
+        <Compile Include="..\BardPerformanceRecorder\Midi\InstrumentNames.cs" Link="InstrumentNames.cs" />
+        <Compile Include="..\BardPerformanceRecorder\Recording\NoteEventRecord.cs" Link="NoteEventRecord.cs" />
+        <Compile Include="..\BardPerformanceRecorder\Recording\PerformanceRecorder.cs" Link="PerformanceRecorder.cs" />
+        <Compile Include="..\BardPerformanceRecorder\Recording\LocalKeyLog.cs" Link="LocalKeyLog.cs" />
+        <Compile Include="..\BardPerformanceRecorder\Game\PerformancePackets.cs" Link="PerformancePackets.cs" />
+    </ItemGroup>
+</Project>

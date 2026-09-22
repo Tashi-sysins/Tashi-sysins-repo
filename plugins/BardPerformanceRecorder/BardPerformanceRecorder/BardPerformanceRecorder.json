@@ -1,0 +1,21 @@
+{
+    "Author": "ヌル",
+    "Name": "Bard Performance Recorder",
+    "InternalName": "BardPerformanceRecorder",
+    "Punchline": "近くの演奏を観測して MIDI に記録",
+    "Description": "近くのプレイヤーが実際に演奏した音符を観測して、標準MIDIファイルに書き出します。\n\n- ソロ・合奏（最大8人）の両方に対応\n- 「ずっと記録する」で、曲ごとに自動で区切って保存（演奏会向け）\n- 楽器28種すべてを判別し、トラック名に楽器名を入れて出力\n- MidiBard2 用の設定ファイル(.json)も同時に出力するので、読み込むだけで同じ編成で弾き直せます\n- 記録後に演奏者を選び直して書き出せます（無関係な演奏の除去・録り直し不要）\n\n他のプラグインは必要ありません。\n\n【制限】\n- テンポ・強弱はパケットに含まれないため復元できません\n- 音の長さは推定値です（単音はほぼ正確／和音では長めに出ます）\n- 自分自身の演奏は記録できません（自分には送り返されないため）\n\nゲームへの送信・演奏操作は一切行いません（受信の観測のみ）。\n元MIDIファイルの復元を目的とするものではありません。",
+    "RepoUrl": "https://github.com/Tashi-sysins/Tashi-sysins-repo",
+    "Tags": [
+        "music",
+        "midi",
+        "bard",
+        "recorder",
+        "performance"
+    ],
+    "CategoryTags": [
+        "other"
+    ],
+    "AcceptsFeedback": true,
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15
+}
