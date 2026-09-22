@@ -91,8 +91,10 @@ LazyLoot の設定をそのまま使ってください。
 ゲームへの送信・演奏操作は一切行いません（受信の観測のみ）。
 
 仕組みの詳細は
-[plugins/BardPerformanceRecorder/docs/技術資料_パケット取得とMIDI化_20260922.md](plugins/BardPerformanceRecorder/docs/技術資料_パケット取得とMIDI化_20260922.md)
+[技術資料](https://github.com/Tashi-sysins/BardPerformanceRecorder/blob/main/docs/技術資料_パケット取得とMIDI化_20260922.md)
 にまとめてあります。
+
+ソースコード：https://github.com/Tashi-sysins/BardPerformanceRecorder
 
 ---
 
@@ -109,4 +111,4 @@ LazyLoot の設定をそのまま使ってください。
 | プラグイン | 理由 | ソースコード |
 |---|---|---|
 | AutoTreasure | 経路探索に vnavmesh を取り込んでいるため | https://github.com/Tashi-sysins/AutoTreasure |
-| Bard Performance Recorder | MidiBard（akira0245）の構造情報を参考にしているため | [plugins/BardPerformanceRecorder/](plugins/BardPerformanceRecorder/) |
+| Bard Performance Recorder | MidiBard（akira0245）の構造情報を参考にしているため | https://github.com/Tashi-sysins/BardPerformanceRecorder |
