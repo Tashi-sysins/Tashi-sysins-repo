@@ -3,9 +3,9 @@
     "Author": "ヌル",
     "Name": "AutoTreasure",
     "InternalName": "AutoTreasure",
-    "AssemblyVersion": "0.1.0.2",
-    "TestingAssemblyVersion": "0.1.0.2",
-    "Description": "古ぼけた地図S5の宝探しを自動化する。\n宝の座標を割り出して移動し、ディグ・宝箱・討伐・ロット・魔紋の周回までを通しで行う。\n１台のPC内限定で複数クライアントの足並みも揃える。\n\n必須プラグイン: BossMod Reborn / Rotation Solver Reborn\n（移動は取り込み済みの vnavmesh を使うため、別途導入は不要）",
+    "AssemblyVersion": "0.2.0.0",
+    "TestingAssemblyVersion": "0.2.0.0",
+    "Description": "古ぼけた地図S5の宝探しを自動化する。\n宝の座標を割り出して移動し、ディグ・宝箱・討伐・ロット・魔紋の周回までを通しで行う。\n複数クライアントの足並みも揃える。同じPC内でも、別々のPC・別々の回線でも繋がる。\n\n必須プラグイン: BossMod Reborn / Rotation Solver Reborn\n（移動は取り込み済みの vnavmesh を使うため、別途導入は不要）",
     "Punchline": "魔紋自動周回",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
@@ -22,11 +22,10 @@
     "IsHide": false,
     "IsTestingExclusive": false,
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.2/AutoTreasure.zip",
-    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.2/AutoTreasure.zip",
-    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.1.0.2/AutoTreasure.zip",
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.2.0.0/AutoTreasure.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.2.0.0/AutoTreasure.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoTreasure-0.2.0.0/AutoTreasure.zip",
     "DownloadCount": 0,
-    "Changelog": "0.1.0.2\n説明文を修正。\n\n0.1.0.1\nアイコンを変更。\n\n0.1.0.0\n初回公開。"
+    "Changelog": "0.2.0.0\nインターネット越しの連携に対応。別々のPC・別々の回線でも足並みを揃えられる。\n同じパーティーなら招待のやり取りは不要（設定の「繋ぎ方」で選ぶ）。\n\n不具合の修正:\n・地図役がパーティリーダー以外だと、宝の座標が仲間に届かなかった\n・地図役が地形の外に立って掘ると、宝箱へ移動できずに止まっていた\n・魔紋の中で、敵が出ているのに宝箱へ触り続けていた\n・LazyLoot が押さないとき、ロットが終わらないまま止まっていた\n・革袋を拾わずに次の区画へ進んでいた\n・フェアリー等のペットを敵と誤って狙い、追いかけてしまうことがあった\n・CBT(Automaton)の即脱出で、宝箱を取る前に脱出することがあった\n  （周回中だけ止め、終わったら元に戻す）\n\nそのほか:\n・止まったときに何が起きているかを記録に残すようにした\n・中央以外の宝箱は待たずに開けるようにした\n\n0.1.0.2\n説明文を修正。\n\n0.1.0.1\nアイコンを変更。\n\n0.1.0.0\n初回公開。"
   }
 ]
-
