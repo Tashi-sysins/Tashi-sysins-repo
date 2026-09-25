@@ -57,5 +57,35 @@
     "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/BardPerformanceRecorder-0.1.0.0/BardPerformanceRecorder.zip",
     "DownloadCount": 0,
     "Changelog": "0.1.0.0\n初回公開。\n\n近くのプレイヤーの演奏を観測してMIDIに記録します。\n・ソロと合奏（最大8人）に対応\n・「ずっと記録する」で曲ごとに自動保存\n・楽器28種を判別し、MidiBard2用の設定(.json)も同時出力\n・記録後に演奏者を選び直して書き出せます"
+  },
+  {
+    "Author": "ヌル",
+    "Name": "GBR Venture Relay",
+    "InternalName": "GbrVentureRelay",
+    "AssemblyVersion": "0.1.0.0",
+    "TestingAssemblyVersion": "0.1.0.0",
+    "Description": "GatherBuddyReborn の自動採集中に、リテイナーのベンチャーが回収できる状態になったら、採集ノードの切れ目で自動採集を一時停止し、街へ戻って呼び鈴からベンチャーを回収し、リテイナーの画面を閉じてから自動採集を再開します。\n\n回収できるベンチャーが無いときは何もしません。呼び鈴の場所は自動で探して覚えるため、座標を手で登録する必要はありません。\n\nGatherBuddyReborn の自動採集と完全に連動します。自動採集を ON にするとこのプラグインも動き出し、OFF にすると止まります。このプラグイン側に ON / OFF はありません。\n\n帰還先はリムサ・グリダニア・ウルダハ・クリスタリウム・クガネ・ソリューション・ナインから選べます（既定はリムサ）。\n\n必須プラグイン: GatherBuddyReborn / AutoRetainer / Lifestream / vnavmesh",
+    "Punchline": "採集の合間にベンチャーを回収して自動で戻る",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "RepoUrl": "https://github.com/Tashi-sysins/GbrVentureRelay",
+    "Tags": [
+      "gatherbuddy",
+      "gathering",
+      "retainer",
+      "venture",
+      "automation"
+    ],
+    "CategoryTags": [
+      "other"
+    ],
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.1.0.0/GbrVentureRelay.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.1.0.0/GbrVentureRelay.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.1.0.0/GbrVentureRelay.zip",
+    "DownloadCount": 0,
+    "Changelog": "0.1.0.0\n初回公開。\n\nGatherBuddyReborn の自動採集中に、ベンチャーを回収して戻ってきます。\n・採集ノードを取り終わってから中断するので採り残しが出ません\n・呼び鈴の場所は自動で探して覚えます（座標の手入力は不要）\n・GBR の自動採集 ON / OFF と完全に連動します\n・回収できるベンチャーが無いときは何もしません"
   }
 ]
