@@ -62,9 +62,9 @@
     "Author": "ヌル",
     "Name": "GBR Venture Relay",
     "InternalName": "GbrVentureRelay",
-    "AssemblyVersion": "0.1.0.0",
-    "TestingAssemblyVersion": "0.1.0.0",
-    "Description": "GatherBuddyReborn の自動採集中に、リテイナーのベンチャーが回収できる状態になったら、採集ノードの切れ目で自動採集を一時停止し、街へ戻って呼び鈴からベンチャーを回収し、リテイナーの画面を閉じてから自動採集を再開します。\n\n回収できるベンチャーが無いときは何もしません。呼び鈴の場所は自動で探して覚えるため、座標を手で登録する必要はありません。\n\nGatherBuddyReborn の自動採集と完全に連動します。自動採集を ON にするとこのプラグインも動き出し、OFF にすると止まります。このプラグイン側に ON / OFF はありません。\n\n帰還先はリムサ・グリダニア・ウルダハ・クリスタリウム・クガネ・ソリューション・ナインから選べます（既定はリムサ）。\n\n必須プラグイン: GatherBuddyReborn / AutoRetainer / Lifestream / vnavmesh",
+    "AssemblyVersion": "0.2.2.0",
+    "TestingAssemblyVersion": "0.2.2.0",
+    "Description": "GatherBuddyReborn の自動採集中に、リテイナーのベンチャーが回収できる状態になったら、採集ノードの切れ目で自動採集を一時停止し、帰還先の宿屋の部屋へ入って呼び鈴からベンチャーを回収し、リテイナーの画面を閉じてから自動採集を再開します。宿屋までの移動は Lifestream の宿屋機能を使います。\n\n回収できるベンチャーが無いときは何もしません。他のワールドに滞在している間はリテイナーを呼べないため、回収に向かいません。\n\nGatherBuddyReborn の自動採集と完全に連動します。自動採集を ON にするとこのプラグインも動き出し、OFF にすると止まります。このプラグイン側に ON / OFF はありません。動いている間は、回収の取り合いを避けるため GatherBuddyReborn の「Wait for AutoRetainer Multi-mode」を OFF に保ちます。\n\n帰還先はリムサ・ロミンサ・ウルダハ・グリダニア・イシュガルド・クガネ・クリスタリウム・オールド・シャーレアン・トライヨラの宿屋から選べます（既定はリムサ。Lifestream に任せることもできます）。\n\n必須プラグイン: GatherBuddyReborn / AutoRetainer / Lifestream / vnavmesh",
     "Punchline": "採集の合間にベンチャーを回収して自動で戻る",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
@@ -82,10 +82,10 @@
     "IsHide": false,
     "IsTestingExclusive": false,
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.1.0.0/GbrVentureRelay.zip",
-    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.1.0.0/GbrVentureRelay.zip",
-    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.1.0.0/GbrVentureRelay.zip",
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.2.2.0/GbrVentureRelay.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.2.2.0/GbrVentureRelay.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.2.2.0/GbrVentureRelay.zip",
     "DownloadCount": 0,
-    "Changelog": "0.1.0.0\n初回公開。\n\nGatherBuddyReborn の自動採集中に、ベンチャーを回収して戻ってきます。\n・採集ノードを取り終わってから中断するので採り残しが出ません\n・呼び鈴の場所は自動で探して覚えます（座標の手入力は不要）\n・GBR の自動採集 ON / OFF と完全に連動します\n・回収できるベンチャーが無いときは何もしません"
+    "Changelog": "0.2.2.0\n帰還先を各都市の宿屋の部屋にしました（宿屋までの移動は Lifestream の宿屋機能）。\n・0.1 で選んでいた都市は、同じ都市の宿屋へ自動で引き継ぎます（ソリューション・ナインは宿屋が無いためリムサ）\n・他のワールドに滞在している間・テレポートできない場所では回収に向かいません\n・動いている間、GatherBuddyReborn の「Wait for AutoRetainer Multi-mode」を OFF に保ちます\n・呼び鈴の場所を探して覚える機能を外しました\n・宿屋への移動を確かめる検証タブを追加しました（「記録」タブを5回続けてクリックで出ます）\n\n0.1.0.0\n初回公開。\n\nGatherBuddyReborn の自動採集中に、ベンチャーを回収して戻ってきます。\n・採集ノードを取り終わってから中断するので採り残しが出ません\n・呼び鈴の場所は自動で探して覚えます（座標の手入力は不要）\n・GBR の自動採集 ON / OFF と完全に連動します\n・回収できるベンチャーが無いときは何もしません"
   }
 ]
