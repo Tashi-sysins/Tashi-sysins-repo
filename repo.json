@@ -116,5 +116,33 @@
     "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoJobQuest-0.1.0.0/AutoJobQuest.zip",
     "DownloadCount": 0,
     "Changelog": "0.1.0.0\n初回公開。\n\n製作8職と採集3職のジョブクエ（Lv1〜70）を、素材集めから報告まで自動で進めます。\n・詳しい記録（ログ）をファイルに残す機能は既定で OFF です（デバッグタブで ON にできます）"
+  },
+  {
+    "Author": "ヌル",
+    "Name": "FATE自動レベルシンク",
+    "InternalName": "FATEAutoLevelSync",
+    "AssemblyVersion": "0.1.0.0",
+    "TestingAssemblyVersion": "0.1.0.0",
+    "Description": "FATE に入ったら自動でレベルシンクします",
+    "Punchline": "サーバー情報バーに「レベシンク：ON/OFF」を表示して、クリックで切り替え",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "RepoUrl": "https://github.com/Tashi-sysins/FATEAutoLevelSync",
+    "Tags": [
+      "fate",
+      "levelsync",
+      "dtr"
+    ],
+    "CategoryTags": [
+      "other"
+    ],
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/FATEAutoLevelSync-0.1.0.0/FATEAutoLevelSync.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/FATEAutoLevelSync-0.1.0.0/FATEAutoLevelSync.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/FATEAutoLevelSync-0.1.0.0/FATEAutoLevelSync.zip",
+    "DownloadCount": 0,
+    "Changelog": "0.1.0.0\n初回公開。\n\nサーバー情報バーの「レベシンク：ON/OFF」をクリックして、FATE での自動レベルシンクを切り替えます。\n・起動時は OFF です\n・OFF にしても、いまのレベルシンクは解除しません"
   }
 ]
