@@ -87,5 +87,34 @@
     "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.2.2.0/GbrVentureRelay.zip",
     "DownloadCount": 0,
     "Changelog": "0.2.2.0\n帰還先を各都市の宿屋の部屋にしました（宿屋までの移動は Lifestream の宿屋機能）。\n・0.1 で選んでいた都市は、同じ都市の宿屋へ自動で引き継ぎます（ソリューション・ナインは宿屋が無いためリムサ）\n・他のワールドに滞在している間・テレポートできない場所では回収に向かいません\n・動いている間、GatherBuddyReborn の「Wait for AutoRetainer Multi-mode」を OFF に保ちます\n・呼び鈴の場所を探して覚える機能を外しました\n・宿屋への移動を確かめる検証タブを追加しました（「記録」タブを5回続けてクリックで出ます）\n\n0.1.0.0\n初回公開。\n\nGatherBuddyReborn の自動採集中に、ベンチャーを回収して戻ってきます。\n・採集ノードを取り終わってから中断するので採り残しが出ません\n・呼び鈴の場所は自動で探して覚えます（座標の手入力は不要）\n・GBR の自動採集 ON / OFF と完全に連動します\n・回収できるベンチャーが無いときは何もしません"
+  },
+  {
+    "Author": "ヌル",
+    "Name": "AutoJobQuest",
+    "InternalName": "AutoJobQuest",
+    "AssemblyVersion": "0.1.0.0",
+    "TestingAssemblyVersion": "0.1.0.0",
+    "Description": "木工〜調理の8職と採掘・園芸・漁師のジョブクエ（Lv1〜70）を自動で進めます。足りない素材をリテイナー・マーケットボード・NPC 購入・戦闘・採集・精選・釣りで集め、未読の秘伝書は収集品の納品で得た紫貨で交換し、グリダニアの宿屋で製作・マテリア装着をして、Questionable でクエストを受注・報告します。\n\n選んだ職が Lv70 以上、製作職の装備が Lv68 以上であることなどが開始の条件です。マーケットボードの自動購入でギルを使います。\n\nArtisan・GatherBuddyReborn・vnavmesh・AutoHook・Lifestream・Questionable・RotationSolverReborn・TextAdvance・BossModReborn・Allagan Tools（または Allagan Item Search）が必要です。",
+    "Punchline": "製作・採集のジョブクエ（Lv1〜70）を素材集めから報告まで自動で進める",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "RepoUrl": "https://github.com/Tashi-sysins/AutoJobQuest",
+    "Tags": [
+      "crafting",
+      "gathering",
+      "quest",
+      "automation"
+    ],
+    "CategoryTags": [
+      "other"
+    ],
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoJobQuest-0.1.0.0/AutoJobQuest.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoJobQuest-0.1.0.0/AutoJobQuest.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoJobQuest-0.1.0.0/AutoJobQuest.zip",
+    "DownloadCount": 0,
+    "Changelog": "0.1.0.0\n初回公開。\n\n製作8職と採集3職のジョブクエ（Lv1〜70）を、素材集めから報告まで自動で進めます。\n・詳しい記録（ログ）をファイルに残す機能は既定で OFF です（デバッグタブで ON にできます）"
   }
 ]
