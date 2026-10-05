@@ -62,8 +62,8 @@
     "Author": "ヌル",
     "Name": "GBRHelper",
     "InternalName": "GBRHelper",
-    "AssemblyVersion": "0.3.0.3",
-    "TestingAssemblyVersion": "0.3.0.3",
+    "AssemblyVersion": "0.3.0.4",
+    "TestingAssemblyVersion": "0.3.0.4",
     "Description": "GatherBuddyReborn（GBR）の自動採集を補助する機能を 1 つにまとめたプラグインです。\n\n・GBR の日本語表示：GBR を日本語化\n・ベンチャー回収：自動採取中にベンチャー回収可能になったら、指定した宿屋へ一時的に戻る\n・ベンチャー未採取品の採取：リテイナーにベンチャー依頼させる際、未採取品だと依頼出来ないのでフラグ立てをする\n・全素材の補充：リテイナーに全素材を持たせたい人用\n・霊砂・クリスタル：欲しい霊砂・クリスタルを目標の数まで、原料を採って精選させる\n・Crafting Listsから末端素材抽出：Artisan の Crafting Lists の素材を GBR のリストにする",
     "Punchline": "GBR の自動採集を補助（ベンチャー回収・未採取品・素材の補充・霊砂・日本語表示）",
     "ApplicableVersion": "any",
@@ -84,11 +84,11 @@
     "IsHide": false,
     "IsTestingExclusive": false,
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.3/GBRHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.3/GBRHelper.zip",
-    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.3/GBRHelper.zip",
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.4/GBRHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.4/GBRHelper.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.4/GBRHelper.zip",
     "DownloadCount": 0,
-    "Changelog": "0.3.0.3\n・説明文を短くしました\n・コマンドの説明をプラグイン一覧に出さないようにしました（コマンドは使えます）\n\n0.3.0.2\n・ベンチャー回収の画面を整理（状態の表示・「いますぐ回収へ向かう」・タブを外し、設定を直接並べました）\n・「ベンチャー依頼品の解放採取」を「ベンチャー未採取品の採取」に改名\n・Crafting Lists で、伝承録を読んでいないと採れない素材を入れないようにしました\n\n0.3.0.1\n・左の一覧の一番上に「GBR の画面を開く」ボタンを追加\n・「必要なプラグイン」の背景を青にして目立たせました\n・版の書かれていないプラグインが入っていると「必要なプラグイン」が表示されなかったのを修正\n・Crafting Lists の画面に、GBR の「Artisanから読み込む」の案内を追加\n・説明文を短くしました\n\n0.3.0.0\n初回公開（GBR Venture Relay 0.2.2.0 を改名し、機能を足しました）。\n・GBR の日本語表示・ベンチャー依頼品の解放採取・全素材の補充・霊砂・クリスタル・Crafting Listsから末端素材抽出を追加\n・左の一覧の一番上に「必要なプラグイン」（導入状況の表示）\n・設定をキャラクターごとのファイルに保存\n・ベンチャー回収に「有効」のチェック（既定 ON）を追加\n・ベンチャー回収で、回収するものが無かったときは「回収不要」とし、回収回数に数えない\n・ベンチャー回収の設定「採集の切れ目を待つ上限」を外しました（動きは変わりません）\n・ベンチャー回収の設定は GBR Venture Relay から自動で引き継ぎます"
+    "Changelog": "0.3.0.4\n・「必要なプラグイン」の画面を、プラグインと状態だけの表にしました\n\n0.3.0.3\n・説明文を短くしました\n・コマンドの説明をプラグイン一覧に出さないようにしました（コマンドは使えます）\n\n0.3.0.2\n・ベンチャー回収の画面を整理（状態の表示・「いますぐ回収へ向かう」・タブを外し、設定を直接並べました）\n・「ベンチャー依頼品の解放採取」を「ベンチャー未採取品の採取」に改名\n・Crafting Lists で、伝承録を読んでいないと採れない素材を入れないようにしました\n\n0.3.0.1\n・左の一覧の一番上に「GBR の画面を開く」ボタンを追加\n・「必要なプラグイン」の背景を青にして目立たせました\n・版の書かれていないプラグインが入っていると「必要なプラグイン」が表示されなかったのを修正\n・Crafting Lists の画面に、GBR の「Artisanから読み込む」の案内を追加\n・説明文を短くしました\n\n0.3.0.0\n初回公開（GBR Venture Relay 0.2.2.0 を改名し、機能を足しました）。\n・GBR の日本語表示・ベンチャー依頼品の解放採取・全素材の補充・霊砂・クリスタル・Crafting Listsから末端素材抽出を追加\n・左の一覧の一番上に「必要なプラグイン」（導入状況の表示）\n・設定をキャラクターごとのファイルに保存\n・ベンチャー回収に「有効」のチェック（既定 ON）を追加\n・ベンチャー回収で、回収するものが無かったときは「回収不要」とし、回収回数に数えない\n・ベンチャー回収の設定「採集の切れ目を待つ上限」を外しました（動きは変わりません）\n・ベンチャー回収の設定は GBR Venture Relay から自動で引き継ぎます"
   },
   {
     "Author": "ヌル",
