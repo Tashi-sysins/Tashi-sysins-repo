@@ -60,21 +60,23 @@
   },
   {
     "Author": "ヌル",
-    "Name": "GBR Venture Relay",
-    "InternalName": "GbrVentureRelay",
-    "AssemblyVersion": "0.2.2.0",
-    "TestingAssemblyVersion": "0.2.2.0",
-    "Description": "GatherBuddyReborn の自動採集中に、リテイナーのベンチャーが回収できる状態になったら、採集ノードの切れ目で自動採集を一時停止し、帰還先の宿屋の部屋へ入って呼び鈴からベンチャーを回収し、リテイナーの画面を閉じてから自動採集を再開します。宿屋までの移動は Lifestream の宿屋機能を使います。\n\n回収できるベンチャーが無いときは何もしません。他のワールドに滞在している間はリテイナーを呼べないため、回収に向かいません。\n\nGatherBuddyReborn の自動採集と完全に連動します。自動採集を ON にするとこのプラグインも動き出し、OFF にすると止まります。このプラグイン側に ON / OFF はありません。動いている間は、回収の取り合いを避けるため GatherBuddyReborn の「Wait for AutoRetainer Multi-mode」を OFF に保ちます。\n\n帰還先はリムサ・ロミンサ・ウルダハ・グリダニア・イシュガルド・クガネ・クリスタリウム・オールド・シャーレアン・トライヨラの宿屋から選べます（既定はリムサ。Lifestream に任せることもできます）。\n\n必須プラグイン: GatherBuddyReborn / AutoRetainer / Lifestream / vnavmesh",
-    "Punchline": "採集の合間にベンチャーを回収して自動で戻る",
+    "Name": "GBRHelper",
+    "InternalName": "GBRHelper",
+    "AssemblyVersion": "0.3.0.0",
+    "TestingAssemblyVersion": "0.3.0.0",
+    "Description": "GatherBuddyReborn（GBR）の自動採集を補助する機能を 1 つにまとめたプラグインです。GBR 本体には手を加えません。\n\n・GBR の日本語表示：GBR のメイン画面の英語を日本語で表示\n・ベンチャー回収：自動採集中にベンチャーが回収できるようになったら、採集の切れ目で宿屋の部屋へ戻って回収し、自動採集に戻る（旧 GBR Venture Relay）\n・ベンチャー依頼品の解放採取：採取手帳でまだ採っていない品を、Lv 帯ごとに GBR のリストにする\n・全素材の補充：Lv 帯ごとに全部の品を N 個ずつ（または鞄＋リテイナーで N 個になるまで）採るリストを作る\n・霊砂・クリスタル：欲しい霊砂・クリスタルを目標の数まで、原料を採って精選させる\n・Crafting Listsから末端素材抽出：Artisan の Crafting Lists の素材を GBR のリストにする\n\n必須プラグイン: GatherBuddyReborn\n機能によって必要: AutoRetainer / Lifestream / vnavmesh（ベンチャー回収）・Allagan Tools（希望所持数・リテイナーの数）・Artisan（Crafting Lists）\n画面の「必要なプラグイン」で導入状況を確かめられます。\n\nGBR Venture Relay を使っていた場合は、GBR Venture Relay を外してください（設定は自動で引き継ぎます）。",
+    "Punchline": "GBR の自動採集を補助（ベンチャー回収・未採取品・素材の補充・霊砂・日本語表示）",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
-    "RepoUrl": "https://github.com/Tashi-sysins/GbrVentureRelay",
+    "RepoUrl": "https://github.com/Tashi-sysins/GBRHelper",
     "Tags": [
       "gatherbuddy",
       "gathering",
       "retainer",
       "venture",
-      "automation"
+      "automation",
+      "japanese",
+      "translation"
     ],
     "CategoryTags": [
       "other"
@@ -82,11 +84,11 @@
     "IsHide": false,
     "IsTestingExclusive": false,
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.2.2.0/GbrVentureRelay.zip",
-    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.2.2.0/GbrVentureRelay.zip",
-    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GbrVentureRelay-0.2.2.0/GbrVentureRelay.zip",
+    "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.0/GBRHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.0/GBRHelper.zip",
+    "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/GBRHelper-0.3.0.0/GBRHelper.zip",
     "DownloadCount": 0,
-    "Changelog": "0.2.2.0\n帰還先を各都市の宿屋の部屋にしました（宿屋までの移動は Lifestream の宿屋機能）。\n・0.1 で選んでいた都市は、同じ都市の宿屋へ自動で引き継ぎます（ソリューション・ナインは宿屋が無いためリムサ）\n・他のワールドに滞在している間・テレポートできない場所では回収に向かいません\n・動いている間、GatherBuddyReborn の「Wait for AutoRetainer Multi-mode」を OFF に保ちます\n・呼び鈴の場所を探して覚える機能を外しました\n・宿屋への移動を確かめる検証タブを追加しました（「記録」タブを5回続けてクリックで出ます）\n\n0.1.0.0\n初回公開。\n\nGatherBuddyReborn の自動採集中に、ベンチャーを回収して戻ってきます。\n・採集ノードを取り終わってから中断するので採り残しが出ません\n・呼び鈴の場所は自動で探して覚えます（座標の手入力は不要）\n・GBR の自動採集 ON / OFF と完全に連動します\n・回収できるベンチャーが無いときは何もしません"
+    "Changelog": "0.3.0.0\n初回公開（GBR Venture Relay 0.2.2.0 を改名し、機能を足しました）。\n・GBR の日本語表示・ベンチャー依頼品の解放採取・全素材の補充・霊砂・クリスタル・Crafting Listsから末端素材抽出を追加\n・左の一覧の一番上に「必要なプラグイン」（導入状況の表示）\n・設定をキャラクターごとのファイルに保存\n・ベンチャー回収に「有効」のチェック（既定 ON）を追加\n・ベンチャー回収で、回収するものが無かったときは「回収不要」とし、回収回数に数えない\n・ベンチャー回収の設定「採集の切れ目を待つ上限」を外しました（動きは変わりません）\n・ベンチャー回収の設定は GBR Venture Relay から自動で引き継ぎます"
   },
   {
     "Author": "ヌル",
