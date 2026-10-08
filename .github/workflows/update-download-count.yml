@@ -1,0 +1,45 @@
+name: ダウンロード数を更新する
+
+# repo.json の DownloadCount を、このリポジトリのリリースのダウンロード数で書き換える（1 時間ごと）。
+# Dalamud のプラグインの画面で、作者名の横に「(N downloads)」と出るようになる。
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/scripts/update_download_count.py
+      - .github/workflows/update-download-count.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-download-count
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 取り出す
+        uses: actions/checkout@v4
+
+      - name: ダウンロード数を数えて repo.json に書く
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update_download_count.py repo.json
+
+      - name: 変わっていればコミットする
+        run: |
+          if git diff --quiet -- repo.json; then
+            echo "変化なし"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add repo.json
+          git commit -m "ダウンロード数を更新する"
+          git push || (git pull --rebase origin main && git push)
