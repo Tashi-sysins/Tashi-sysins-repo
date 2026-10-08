@@ -143,7 +143,7 @@
     "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoMobFarm-0.7.1.3/AutoMobFarm.zip",
     "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoMobFarm-0.7.1.3/AutoMobFarm.zip",
     "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/AutoMobFarm-0.7.1.3/AutoMobFarm.zip",
-    "DownloadCount": 1,
+    "DownloadCount": 4,
     "Changelog": "0.7.1.3\n初回公開。\n\n・モブ：素材を落とすフィールドの敵の一覧。座標を押すとその地点の敵を倒し続ける。右クリックで自動討伐に追加\n・アイテム：レベル帯ごとの素材と代表の座標・敵\n・自動討伐：プリセットの品を目標数まで上から順に集める（Artisan の Crafting Lists からも作れる）\n・必須プラグイン：足りないプラグインはボタン 1 つでインストール、止まっていれば有効にする"
   }
 ]
