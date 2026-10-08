@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 取り出す
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: ダウンロード数を数えて repo.json に書く
         env:
