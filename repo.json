@@ -115,7 +115,7 @@
     "DownloadLinkInstall": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/FATEAutoLevelSync-0.1.0.0/FATEAutoLevelSync.zip",
     "DownloadLinkUpdate": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/FATEAutoLevelSync-0.1.0.0/FATEAutoLevelSync.zip",
     "DownloadLinkTesting": "https://github.com/Tashi-sysins/Tashi-sysins-repo/releases/download/FATEAutoLevelSync-0.1.0.0/FATEAutoLevelSync.zip",
-    "DownloadCount": 24,
+    "DownloadCount": 25,
     "Changelog": "0.1.0.0\n初回公開。\n\nサーバー情報バーの「レベシンク：ON/OFF」をクリックして、FATE での自動レベルシンクを切り替えます。\n・起動時は OFF です\n・OFF にしても、いまのレベルシンクは解除しません"
   },
   {
